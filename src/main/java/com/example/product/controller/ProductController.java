@@ -43,9 +43,9 @@ public class ProductController {
     }
 }
 
-// private final ProductImpl productService; l'étagère = le champ (productService) : excellent, tu identifies bien le champ comme l'emplacement permanent où l'objet sera stocké.
+// private final ProductServiceImpl productService; l'étagère = le champ (productService) : excellent, tu identifies bien le champ comme l'emplacement permanent où l'objet sera stocké.
 
-// public ProductController(ProductImpl productService) { les mains (productService) = paramètre (variable locale au constructeur) : parfait, tu distingues le paramètre temporaire du constructeur.
+// public ProductController(ProductServiceImpl productService) { les mains (productService) = paramètre (variable locale au constructeur) : parfait, tu distingues le paramètre temporaire du constructeur.
 
 // this.productService = productService; Ici l'étagère (le champ/this.productService) = Ici les mains (le paramètre/productService) : tu montres que tu comprends l'affectation, où la valeur des "mains" est déposée sur l'étagère.
 
