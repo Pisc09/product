@@ -1,7 +1,7 @@
 package com.example.product.service;
 
 import com.example.product.entity.Product;
-import com.example.product.interfaces.ProductImpl;
+import com.example.product.interfaces.IProductService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Service
-public class ProductService implements ProductImpl {
+public class ProductServiceImpl implements IProductService {
 
     private final List<Product> products = new ArrayList<>();
 
