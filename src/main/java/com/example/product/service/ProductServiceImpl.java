@@ -1,6 +1,6 @@
 package com.example.product.service;
 
-import com.example.product.entity.Product;
+import com.example.product.model.entity.Product;
 import com.example.product.interfaces.IProductService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductServiceImpl implements IProductService {
@@ -51,6 +52,6 @@ public class ProductServiceImpl implements IProductService {
                 .filter(Objects::nonNull) // Placeholder return statement
                 .filter(p   ->  (category == null || category.equals(p.getCategory())) &&
                                         (price == null || p.getPrice() <= price))
-                .toList();
+                .collect(Collectors.toList());
     }
 }

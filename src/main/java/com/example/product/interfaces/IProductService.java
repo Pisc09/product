@@ -1,6 +1,6 @@
 package com.example.product.interfaces;
 
-import com.example.product.entity.Product;
+import com.example.product.model.entity.Product;
 
 import java.util.List;
 import java.util.UUID;

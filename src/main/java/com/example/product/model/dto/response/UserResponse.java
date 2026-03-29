@@ -1,0 +1,16 @@
+package com.example.product.model.dto.response;
+
+import java.util.UUID;
+
+
+public record UserResponse(
+
+        UUID id,
+        String username,
+        String firstName,
+        String lastName,
+        String phone,
+        String email
+) {
+
+}
